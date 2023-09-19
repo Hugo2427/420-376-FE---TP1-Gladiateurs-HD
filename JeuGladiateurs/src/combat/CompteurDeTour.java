@@ -7,6 +7,7 @@ public class CompteurDeTour {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Attributs">
     // TODO : Mettre vos attributs ici
+    
     // </editor-fold>
     
     // **************************************************************************
