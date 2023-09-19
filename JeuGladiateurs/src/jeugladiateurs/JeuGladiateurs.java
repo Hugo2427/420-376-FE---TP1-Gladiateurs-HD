@@ -25,9 +25,10 @@ public class JeuGladiateurs {
     // TODO : Afficher les infos de chaque personnage
     Bob.afficherInfosPersonnage();
     Igor.afficherInfosPersonnage();
-    
 
-    // TODO : Afficher le message du début du combat
+
+
+// TODO : Afficher le message du début du combat
     // </editor-fold>
 
     // **************************************************************************
