@@ -94,7 +94,7 @@ public class Personnage {
         System.out.println("nom : " + nom);
         System.out.println("attaque : " + valeurMaxAttaque);
         System.out.println("Defense : " + valeurDefense);
-        System.out.println("Points de vie" + pointDeVie);
+        System.out.println("Points de vie : " + pointDeVie);
         System.out.println("Initiative : " + initiative);
         if (pointDeVie <= 0) {
             System.out.println("Statut : Mort");
