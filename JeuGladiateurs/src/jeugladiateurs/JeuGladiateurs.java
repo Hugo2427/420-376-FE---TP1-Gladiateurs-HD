@@ -25,6 +25,12 @@ public class JeuGladiateurs {
     // TODO : Afficher les infos de chaque personnage
     Bob.afficherInfosPersonnage();
     Igor.afficherInfosPersonnage();
+    
+    
+    // ************************ Debut du code temporaire ***********************
+
+    // ************************ Fin du code temporaire ***********************
+
 
 
 
