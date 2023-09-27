@@ -29,7 +29,8 @@ public class JeuGladiateurs {
     
     affichage.afficherDebutCombat();
     
-    while (Bob.getPointDeVie() != 0 || Igor.getPointDeVie() != 0) {
+    while ((Bob.getPointDeVie() > 0) && (Igor.getPointDeVie() > 0)) {
+        
     tour.afficheTour();
     
     for (int i = 0; i < 100; i++) {
@@ -54,6 +55,8 @@ public class JeuGladiateurs {
     tour.augmenteTour();
     affichage.afficherSeparateurDeTour();
     }
+    
+    affichage.afficheVictoire(Bob, Igor);
     // ************************ Debut du code temporaire ***********************
 
     // ************************ Fin du code temporaire ***********************
