@@ -28,8 +28,7 @@ public class Mirmillons extends Personnage {
     
     
     
-    @Override
-    public void frapperPersonnage(Personnage personnageCible) {
+    public void frapperPersonnage(Retiaires personnageCible, boolean isInitiative) {
         int forceDeFrappe = attaqueCalcul();
         
         int dommage = forceDeFrappe - personnageCible.valeurDefense;
@@ -44,12 +43,23 @@ public class Mirmillons extends Personnage {
             personnageCible.pointDeVie = 0;
         }
         
+        
         System.out.println("");
         System.out.println(nom + " attaque avec une puissance de : " + forceDeFrappe);
         System.out.println(personnageCible.nom + " a une defense de " + personnageCible.valeurDefense);
         System.out.println("Les dommages sont donc de " + dommage);
         
-        
+        if (isInitiative) {
+            if (personnageCible.getPointDeVie() == 0) {
+                System.out.println(nom + " décapite son adversaire");
+            }
+            else {
+            personnageCible.pointDeVie = personnageCible.pointDeVie - dommage;
+            System.out.println(nom + " attaque une seconde fois avec une puissance de : " + forceDeFrappe);
+            System.out.println(personnageCible.nom + " a une defense de " + personnageCible.valeurDefense);
+            System.out.println("Les dommages sont donc de " + dommage);
+            }
+        }
     }
 
     private int attaqueCalcul() {
